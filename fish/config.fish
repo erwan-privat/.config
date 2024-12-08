@@ -9,6 +9,10 @@ else
         set -x PATH "/home/archaoss/conda/bin" $PATH
     end
 end
+
+if test -f "/home/archaoss/conda/etc/fish/conf.d/mamba.fish"
+    source "/home/archaoss/conda/etc/fish/conf.d/mamba.fish"
+end
 # <<< conda initialize <<<
 
 
