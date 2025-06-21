@@ -1,0 +1,4 @@
+
+[Default Applications]
+application/x-ipynb+json=jupyter.desktop
+application/pdf=org.gnome.Evince.desktop

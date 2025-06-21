@@ -1,5 +1,6 @@
 function gcom
-  # git add .
-  git commit -m $argv
-  git push
+  git add --all
+  and git commit -m $argv
+  and git pull --rebase
+  and git push
 end

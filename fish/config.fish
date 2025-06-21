@@ -1,3 +1,5 @@
+set VIRTUAL_ENV_DISABLE_PROMPT 1
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /home/archaoss/conda/bin/conda
@@ -15,14 +17,14 @@ if test -f "/home/archaoss/conda/etc/fish/conf.d/mamba.fish"
 end
 # <<< conda initialize <<<
 
-
 # Created by `pipx` on 2024-07-24 09:32:51
 set PATH $PATH /home/archaoss/.local/bin
 
-if status is-interactive
-  export XAUTHORITY=$HOME/.Xauthority
+fenv source ~/.profile
+abbr -a -- ca 'conda activate'
+abbr -a -- ci 'mamba install -y'
+abbr -a -- ta 'tmux new -A -s'
 
-  if not set -q TMUX
-    tmux attach -t base || tmux new -s base
-  end
+if status is-interactive
+  # export XAUTHORITY=$HOME/.Xauthority
 end
