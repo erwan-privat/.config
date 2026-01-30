@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export --path QM9_PATH:/home/archaoss/data/qm9
 SETUVAR WINEDEBUG:\x2dall
 SETUVAR --export WWW_HOME:https\x3a//duckduckgo\x2ecom
 SETUVAR __fish_initialized:3400

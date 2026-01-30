@@ -1,1 +1,5 @@
 gh/
+tmux/
+dconf/
+
+package-lock.json

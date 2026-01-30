@@ -20,6 +20,9 @@ end
 # Created by `pipx` on 2024-07-24 09:32:51
 set PATH $PATH /home/archaoss/.local/bin
 
+set -g theme_display_user no # for powerline
+set -g theme_display_hostname no # for powerline
+
 fenv source ~/.profile
 abbr -a -- ca 'conda activate'
 abbr -a -- ci 'mamba install -y'
